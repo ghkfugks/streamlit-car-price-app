@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 
 def run_eda():
     st.subheader('데이터 분석')
+    st.subheader('기본적인 데이터 분석입니다')
 
     car_df = pd.read_csv('data/Car_Purchasing_Data.csv', encoding='ISO-8859-1')
 
@@ -50,6 +51,7 @@ def run_eda():
 
     if len(selected_list) > 1 :
     # if len(selected_list) >= 2 :
+        
 
         fig1 = sb.pairplot(data= car_df[selected_list] )
         st.pyplot(fig1)
